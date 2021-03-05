@@ -81,7 +81,7 @@ public class Awal extends javax.swing.JFrame {
 
     private void pegawaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pegawaiActionPerformed
         this.dispose();
-        new views.Pegawai().setVisible(true);
+        new views.Admin().setVisible(true);
     }//GEN-LAST:event_pegawaiActionPerformed
 
     private void pengunjungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pengunjungActionPerformed

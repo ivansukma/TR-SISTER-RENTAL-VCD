@@ -215,7 +215,7 @@ public class PengunjungView extends javax.swing.JFrame {
         textSinopsis.setRows(5);
         jScrollPane2.setViewportView(textSinopsis);
 
-        buttonBaca.setText("Baca");
+        buttonBaca.setText("Tonton");
         buttonBaca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonBacaActionPerformed(evt);

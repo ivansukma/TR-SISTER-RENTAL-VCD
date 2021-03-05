@@ -286,7 +286,7 @@
         </Container>
         <Component class="javax.swing.JButton" name="buttonBaca">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Baca"/>
+            <Property name="text" type="java.lang.String" value="Tonton"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonBacaActionPerformed"/>

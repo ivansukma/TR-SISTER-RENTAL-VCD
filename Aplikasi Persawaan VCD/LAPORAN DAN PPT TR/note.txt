@@ -1,0 +1,7 @@
+controller CRUD
+daos buat mengambil data dr sql
+models setter getter return nilai
+tools koneksi (database)
+views jframe (desain panel)
+
+koneksi menggunakan mysql data source

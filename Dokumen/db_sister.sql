@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2021 at 09:24 AM
+-- Generation Time: Mar 05, 2021 at 02:08 PM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -79,7 +79,9 @@ CREATE TABLE `tb_pelanggan` (
 --
 
 INSERT INTO `tb_pelanggan` (`user_plg`, `pass_plg`, `jenis_langganan`, `nama_plg`, `noktp_plg`, `nohp_plg`, `alamat_plg`, `email_plg`) VALUES
+('Devi', '1234', 'Reguler', 'Devi Ariella susanto', '3309025804000012', '08562745123', 'Jl. Permai no. 9, Kudus', 'deviariella@gmail.com'),
 ('Ivan', '1234', 'Reguler', 'Ivan Sukma Hanindria', '3311092410990004', '081328915920', 'Jl. Podang BG 03 Solo Baru', 'ivanrzr12@gmail.com'),
+('Leon', '1234', 'Reguler', 'Leonardo Wahyu', '331907060800001', '081327594455', 'Perum. Muria Indah C 296 Kudus', 'leonardowahyu01@gmail.com'),
 ('Vika', '1234', 'Reguler', 'Sera Vika Eviana', '3325084302000002', '082227798966', 'Jl Cokronegoro no 10 RT 2 RW 2 Limpung', 'seravikaeviana9@gmail.com');
 
 -- --------------------------------------------------------

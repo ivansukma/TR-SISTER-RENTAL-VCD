@@ -104,7 +104,7 @@ public class VcdDao {
     
     public boolean perbarui(Vcd en) {
         boolean hasil = false;
-        String sql = "UPDATE tb_vcd SET vcd='" + en.getNovcd() + "',judul='" + en.getJudul() + "',kategori='" + en.getKategori() + "'"
+        String sql = "UPDATE tb_vcd SET no_vcd='" + en.getNovcd() + "',judul='" + en.getJudul() + "',kategori='" + en.getKategori() + "'"
                 + ",nama_pencipta = '" + en.getNamaPencipta() + "',nama_penerbit = '" + en.getNamaPenerbit() + 
                 "',tahun_rilis = '" + en.getTahunRilis() + "', sinopsis = '"+ en.getSinopsis()+"' WHERE no_vcd = '" + en.getNovcd() + "'";
         Statement st;

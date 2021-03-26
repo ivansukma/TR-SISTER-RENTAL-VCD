@@ -18,7 +18,7 @@ public class Koneksi {
                 dataSource.setPassword("");
                 dataSource.setServerName("localhost");
                 dataSource.setPort(3306);
-                dataSource.setDatabaseName("db_vcd");
+                dataSource.setDatabaseName("db_sister");
                 connection = dataSource.getConnection();
             } catch (SQLException ex) {
                 Logger.getLogger(Koneksi.class.getName()).log(Level.SEVERE, null, ex);

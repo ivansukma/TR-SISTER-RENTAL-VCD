@@ -9,7 +9,7 @@ import java.util.List;
 
 public class VcdController {
     
-    public String inputDataBuku(String no_vcd, String judul, String kategori, String NamaPenerbit,String NamaPencipta,String Sinopsis,String TahunRilis) {
+    public String inputDataVCD(String no_vcd, String judul, String kategori, String NamaPenerbit,String NamaPencipta,String Sinopsis,String TahunRilis) {
         Koneksi inputBuku = new Koneksi();
         Connection conn = inputBuku.getConnection();
         VcdDao bukuDao = new VcdDao(conn);
@@ -28,7 +28,7 @@ public class VcdController {
         }
     }
     
-    public String updateBuku(String no_vcd, String judul, String kategori, String NamaPenerbit,String NamaPencipta,String TahunRilis, String Sinopsis) {
+    public String updateVCD(String no_vcd, String judul, String kategori, String NamaPenerbit,String NamaPencipta,String TahunRilis, String Sinopsis) {
         Koneksi inputBuku = new Koneksi();
         Connection conn = inputBuku.getConnection();
         VcdDao vcdDao = new VcdDao(conn);
@@ -47,7 +47,7 @@ public class VcdController {
         }
     }
     
-    public String hapusBuku(String no_vcd) {
+    public String hapusVCD(String no_vcd) {
         Koneksi inputBuku = new Koneksi();
         Connection conn = inputBuku.getConnection();
         VcdDao vcdDao = new VcdDao(conn);
@@ -58,7 +58,7 @@ public class VcdController {
         }
     }
     
-    public List<Vcd> cariBuku(String judul) {
+    public List<Vcd> cariVCD(String judul) {
         List<Vcd> lb = new ArrayList();
         Koneksi inputBuku = new Koneksi();
         Connection conn = inputBuku.getConnection();
@@ -73,7 +73,7 @@ public class VcdController {
         }
     }
     
-    public List<Vcd> getBuku() {
+    public List<Vcd> getVCD() {
         List<Vcd> lb = new ArrayList();
         Koneksi inputBuku = new Koneksi();
         Connection conn = inputBuku.getConnection();

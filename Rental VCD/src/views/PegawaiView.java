@@ -34,7 +34,7 @@ public class PegawaiView extends javax.swing.JFrame {
     boolean isShow = false;
    
     public void refresh() {
-        list = bc.getBuku();
+        list = bc.getVCD();
         String[][] data = new String[list.size()][7];
         int i = 0;
         for (Vcd li : list) {
@@ -386,7 +386,7 @@ public class PegawaiView extends javax.swing.JFrame {
 
     private void msktmblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_msktmblActionPerformed
         
-        String input = bc.inputDataBuku(no_vcd.getText(), judul.getText(), kategori.getText(), penerbit.getText(), 
+        String input = bc.inputDataVCD(no_vcd.getText(), judul.getText(), kategori.getText(), penerbit.getText(), 
                 pencipta.getText(), textSinopsis.getText(), tahun.getText());
         refresh();
         setNetralCondition();
@@ -396,7 +396,7 @@ public class PegawaiView extends javax.swing.JFrame {
         int konfirm = JOptionPane.showConfirmDialog(null, "Yakin Hapus?", 
                 "Konfirmasi", JOptionPane.YES_NO_OPTION);
         if (konfirm == JOptionPane.YES_OPTION) {
-            String hapus = bc.hapusBuku(no_vcd.getText().toString());
+            String hapus = bc.hapusVCD(no_vcd.getText().toString());
             String recHapus = dc.hapusDetail(judul.getText().toString());
             refresh();
             setNetralCondition();
@@ -427,7 +427,7 @@ public class PegawaiView extends javax.swing.JFrame {
     private void caribukuKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_caribukuKeyPressed
         //String katakunci = combobox.getSelectedItem().toString();
         List<Vcd> list = new ArrayList();
-        list = bc.cariBuku(caribuku.getText().toString());
+        list = bc.cariVCD(caribuku.getText().toString());
         String[][] data = new String[list.size()][6];
         int i = 0;
         for (Vcd li : list) {
@@ -452,7 +452,7 @@ public class PegawaiView extends javax.swing.JFrame {
 //        String tht=tahun.getText().toString();
 //        String sinop = textSinopsis.getText().toString();
         
-        String update=bc.updateBuku(no_vcd.getText().toString(), judul.getText().toString(), kategori.getText().toString(), penerbit.getText().toString(), pencipta.getText().toString(),tahun.getText().toString(), textSinopsis.getText().toString());
+        String update=bc.updateVCD(no_vcd.getText().toString(), judul.getText().toString(), kategori.getText().toString(), penerbit.getText().toString(), pencipta.getText().toString(),tahun.getText().toString(), textSinopsis.getText().toString());
         refresh();
         clear();
         setNetralCondition();

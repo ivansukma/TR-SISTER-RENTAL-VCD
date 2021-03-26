@@ -50,7 +50,7 @@ public class PengunjungView extends javax.swing.JFrame {
     boolean isShow = false;
     
     public void refresh() {
-        list = bc.getBuku();
+        list = bc.getVCD();
         String[][] data = new String[list.size()][7];
         int i = 0;
         for (Vcd li : list) {
@@ -399,7 +399,7 @@ public class PengunjungView extends javax.swing.JFrame {
     private void caribukuKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_caribukuKeyPressed
         //String katakunci = combobox.getSelectedItem().toString();
          List<Vcd> list = new ArrayList();
-        list = bc.cariBuku(caribuku.getText().toString());
+        list = bc.cariVCD(caribuku.getText().toString());
         String[][] data = new String[list.size()][7];
         int i = 0;
         for (Vcd li : list) {

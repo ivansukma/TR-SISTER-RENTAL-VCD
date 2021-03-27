@@ -33,7 +33,7 @@ public class PengunjungView extends javax.swing.JFrame {
         refresh();
         getAllDetail();
         this.nama = na;
-        buttonBaca.setEnabled(false);
+        buttonTonton.setEnabled(false);
     }
     
     VcdController bc = new VcdController();
@@ -112,7 +112,7 @@ public class PengunjungView extends javax.swing.JFrame {
         tahun.setText("");
         textSinopsis.setText("");
         
-        buttonBaca.setEnabled(false);
+        buttonTonton.setEnabled(false);
     }
     
 
@@ -143,7 +143,7 @@ public class PengunjungView extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         textSinopsis = new javax.swing.JTextArea();
-        buttonBaca = new javax.swing.JButton();
+        buttonTonton = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -215,10 +215,10 @@ public class PengunjungView extends javax.swing.JFrame {
         textSinopsis.setRows(5);
         jScrollPane2.setViewportView(textSinopsis);
 
-        buttonBaca.setText("Tonton");
-        buttonBaca.addActionListener(new java.awt.event.ActionListener() {
+        buttonTonton.setText("Tonton");
+        buttonTonton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonBacaActionPerformed(evt);
+                buttonTontonActionPerformed(evt);
             }
         });
 
@@ -270,7 +270,7 @@ public class PengunjungView extends javax.swing.JFrame {
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(caribuku, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(buttonBaca, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(buttonTonton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -309,7 +309,7 @@ public class PengunjungView extends javax.swing.JFrame {
                     .addComponent(jLabel9)
                     .addComponent(tahun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
-                .addComponent(buttonBaca)
+                .addComponent(buttonTonton)
                 .addContainerGap())
         );
 
@@ -380,7 +380,7 @@ public class PengunjungView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Table1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table1MouseClicked
-       buttonBaca.setEnabled(true);
+       buttonTonton.setEnabled(true);
         
         indeks = Table1.getSelectedRow();
         Vcd dataBuku = list.get(indeks);
@@ -416,7 +416,7 @@ public class PengunjungView extends javax.swing.JFrame {
             "JUDUL", "KATEGORI", "NAMA_PENCIPTA", "NAMA_PENERBIT", "TAHUN_RILIS"}));
     }//GEN-LAST:event_caribukuKeyPressed
 
-    private void buttonBacaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBacaActionPerformed
+    private void buttonTontonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTontonActionPerformed
         getDetailVCD();
         SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date(System.currentTimeMillis());
@@ -427,7 +427,7 @@ public class PengunjungView extends javax.swing.JFrame {
         getAllDetail();
         getDetailVCD();
         clearField();
-    }//GEN-LAST:event_buttonBacaActionPerformed
+    }//GEN-LAST:event_buttonTontonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -471,7 +471,7 @@ public class PengunjungView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable Table1;
-    private javax.swing.JButton buttonBaca;
+    private javax.swing.JButton buttonTonton;
     private javax.swing.JTextField caribuku;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

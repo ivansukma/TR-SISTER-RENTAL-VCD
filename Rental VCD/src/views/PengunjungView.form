@@ -100,7 +100,7 @@
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="caribuku" min="-2" pref="105" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="buttonBaca" alignment="1" min="-2" pref="81" max="-2" attributes="0"/>
+                              <Component id="buttonTonton" alignment="1" min="-2" pref="81" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -149,7 +149,7 @@
                       <Component id="tahun" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="buttonBaca" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonTonton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -284,12 +284,12 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="buttonBaca">
+        <Component class="javax.swing.JButton" name="buttonTonton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tonton"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonBacaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonTontonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

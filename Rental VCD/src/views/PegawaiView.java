@@ -70,7 +70,7 @@ public class PegawaiView extends javax.swing.JFrame {
         }
     }
     
-    public void getDetailBuku() {
+    public void getDetailVCD() {
         List<Detail> dataDet = new ArrayList();
         dataDet = dc.cariDetail(judul.getText().toString());
         
@@ -421,7 +421,7 @@ public class PegawaiView extends javax.swing.JFrame {
         textSinopsis.setText(dataBuku.getSinopsis());
         setInputTableCondition();
         
-        getDetailBuku();
+        getDetailVCD();
     }//GEN-LAST:event_Table1MouseClicked
 
     private void caribukuKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_caribukuKeyPressed
@@ -444,14 +444,7 @@ public class PegawaiView extends javax.swing.JFrame {
     }//GEN-LAST:event_caribukuKeyPressed
 
     private void brutmblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brutmblActionPerformed
-//        String isbnt=isbn.getText().toString();
-//        String judult=judul.getText().toString();
-//        String kategorit=kategori.getText().toString();
-//        String npet=pengarang.getText().toString();
-//        String npt=penerbit.getText().toString();
-//        String tht=tahun.getText().toString();
-//        String sinop = textSinopsis.getText().toString();
-        
+
         String update=bc.updateVCD(no_vcd.getText().toString(), judul.getText().toString(), kategori.getText().toString(), penerbit.getText().toString(), pencipta.getText().toString(),tahun.getText().toString(), textSinopsis.getText().toString());
         refresh();
         clear();
